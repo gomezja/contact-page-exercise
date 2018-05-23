@@ -3,7 +3,7 @@
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 
     box-sizing: border-box;
 }
@@ -11,4 +11,79 @@
 html, body {
     height: 100%;
     background: #fcf7e6;
+}
+
+h1 {
+    color: #595959;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+}
+
+p {
+    color: #a06c29;
+    line-height: 22px;
+}
+
+/******************************************
+/* CONTENT MANAGEMENT SYSTEM
+******************************************/
+.content {
+    margin: 0 8.33%
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 5% 0;
+}
+
+.col-6 {
+    flex: 45%;
+    max-width: 45%;
+}
+
+/* all direct descendants of col-6 and not the last child */
+.col-6 > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.offset {
+    margin-left: 5%;
+}
+
+/******************************************
+/* CONTACT HEADER
+******************************************/
+.email-icon {
+    color: #fefefe;
+    font-size: 22px;
+}
+
+.circle {
+    height: 55px;
+    width: 55px;
+    border-radius: 55px;
+
+    background:#595959;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 20px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+/******************************************
+/* MEDIA QUERIES
+******************************************/
+@media screen and (max-width: 700px) {
+    
 }
