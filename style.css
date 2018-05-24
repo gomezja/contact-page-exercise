@@ -21,6 +21,27 @@ h1 {
     letter-spacing: 0.2em;
 }
 
+h3 {
+    text-align: center;
+    color: #595959;
+
+    font-size: 28px;
+    text-transform: uppercase;
+
+    border-bottom: 2px solid #acacac;
+    line-height: 0.1em;
+    margin: 0 auto;
+    width: 450px;
+}
+
+h3 span {
+    background: #fcf7e6;
+    padding: 0 12px;
+
+    font-size: 28px;
+    font-weight: 600;
+}
+
 p {
     color: #a06c29;
     line-height: 22px;
@@ -138,6 +159,29 @@ input[type="submit"]:hover {
 /******************************************
 /* MEDIA QUERIES
 ******************************************/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 970px) {
+    .col-6 {
+        flex: 100%; 
+        max-width: 100%
+    }
 
+    .row > .col-6:not(:last-child) {
+        margin-bottom: 36px;
+    }
+
+    .offset {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 24px;
+    }
+
+    .circle {
+        display: none;
+    }
 }
