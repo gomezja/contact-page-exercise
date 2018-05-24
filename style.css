@@ -37,12 +37,12 @@ p {
     display: flex;
     flex-wrap: wrap;
 
-    margin: 5% 0;
+    margin: 8.33% 0;
 }
 
 .col-6 {
-    flex: 45%;
-    max-width: 45%;
+    flex: 48%;
+    max-width: 48%;
 }
 
 /* all direct descendants of col-6 and not the last child */
@@ -51,7 +51,7 @@ p {
 }
 
 .offset {
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 /******************************************
@@ -82,8 +82,62 @@ p {
 }
 
 /******************************************
+/* FORM, LABELS, INPUTS
+******************************************/
+label, input:not(#submit), textarea {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    color: #595959;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+input[type=text], 
+textarea {
+    background: #dacfbf;
+    border: 1.5px solid #b3aa9d;
+    border-radius: 2px;
+    height: 30px;
+    color: #595959;
+    padding: 3px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 30px;
+}
+
+#message {
+    height: 175px;
+}
+
+form > *:not(label) {
+    margin-bottom: 15px;
+}
+
+#submit {
+    background: #595959;
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1.5px solid #b3aa9d;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+
+    position: relative;
+    top: -2px;
+}
+
+/******************************************
 /* MEDIA QUERIES
 ******************************************/
-@media screen and (max-width: 700px) {
-    
+@media screen and (max-width: 1200px) {
+
 }
